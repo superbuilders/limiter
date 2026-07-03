@@ -1,6 +1,6 @@
 {
 	"name": "@superbuilders/limiter",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Concurrency limiter primitive for Superbuilders applications",
 	"module": "dist/limiter.js",
 	"main": "dist/limiter.js",
@@ -19,7 +19,8 @@
 	"scripts": {
 		"build": "rm -rf dist && tsgo -p tsconfig.build.json",
 		"typecheck": "tsgo --noEmit",
-		"prepublishOnly": "pnpm run build"
+		"prepublishOnly": "pnpm run build",
+		"test": "pnpm run build && node --test src/limiter.test.ts"
 	},
 	"keywords": [
 		"concurrency",
@@ -36,7 +37,7 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@superbuilders/errors": "^3.0.2"
+		"@superbuilders/errors": "^4.0.0"
 	},
 	"devDependencies": {
 		"@typescript/native-preview": "^7.0.0-dev.20260612.1",

@@ -1,9 +1,12 @@
 {
 	"compilerOptions": {
-		"types": ["bun", "node"],
+		"allowImportingTsExtensions": true,
+		"erasableSyntaxOnly": true,
+		"allowJs": false,
 		"module": "ESNext",
 		"moduleResolution": "Bundler",
-		"lib": ["ESNext", "DOM"],
+		"lib": ["ESNext"],
+		"types": ["node"],
 		"target": "esnext",
 		"strict": true,
 		"noEmit": true,
@@ -17,11 +20,7 @@
 		"noUncheckedIndexedAccess": true,
 		"noImplicitOverride": true,
 		"declaration": true,
-		"declarationMap": true,
-		"paths": {
-			"@superbuilders/limiter": ["./src/limiter.ts"],
-			"@superbuilders/limiter/*": ["./src/*"]
-		}
+		"declarationMap": true
 	},
 	"include": ["src"],
 	"exclude": ["dist", "src/**/*.test.ts"]

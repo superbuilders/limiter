@@ -1,6 +1,6 @@
 {
 	"name": "@superbuilders/limiter",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Concurrency limiter primitive for Superbuilders applications",
 	"module": "dist/limiter.js",
 	"main": "dist/limiter.js",
@@ -9,7 +9,7 @@
 	"exports": {
 		".": {
 			"types": "./dist/limiter.d.ts",
-			"import": "./dist/limiter.js"
+			"default": "./dist/limiter.js"
 		}
 	},
 	"files": [

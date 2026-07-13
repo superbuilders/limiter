@@ -1,6 +1,6 @@
 {
 	"name": "@superbuilders/limiter",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Concurrency limiter primitive for Superbuilders applications",
 	"module": "dist/limiter.js",
 	"main": "dist/limiter.js",
@@ -40,8 +40,8 @@
 		"@superbuilders/errors": "^4.0.0"
 	},
 	"devDependencies": {
-		"typescript": "^7.0.2",
-		"@types/node": "^26.1.0"
+		"@types/node": "^26.1.0",
+		"typescript": "^7.0.2"
 	},
 	"engines": {
 		"node": ">=18"
